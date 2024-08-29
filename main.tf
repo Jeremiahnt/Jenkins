@@ -8,10 +8,10 @@ terraform {
 
 provider "azurerm" {
   features {}
-  client_id       = ""
-  client_secret   = ""
-  tenant_id       = ""
-  subscription_id = ""
+  client_id       = "var.azure-client-id"
+  client_secret   = "var.azure-client-secret"
+  tenant_id       = "var.azure-tenant-id"
+  subscription_id = "var.azure-subscription-id"
 }
 
 resource "azurerm_resource_group" "IAC-rg" {
